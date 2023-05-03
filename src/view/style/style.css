@@ -1,0 +1,121 @@
+
+.nav{margin: 25%;font-size: 20px;}
+div.col{padding: 0px;}
+
+.mt{margin-top: 50px;background-color:whitesmoke;}
+.he1{color: black;}
+
+
+
+
+
+.imgcard{width: 80%;position: relative;left: 10%;background-color: ;}
+
+
+
+
+.img6{width: 40%;height: 40%;margin-top: 5%;margin-left: 5%;}
+.img7{width: 40%;height: 40%;margin-top: 5%;margin-left: 10%;}
+
+
+
+.m1-5{color:;margin-left: ;background-color: grey ;text-align: center;}
+
+/* .abt1{background-color: yellow;}
+.abt2{width: 50%;background-color: ;position: absolute;top: 30%;color: beige;} */
+.img9{width: 50%;}
+
+
+.kid{text-align: center;position: relative;right: 50px;color: red;text-decoration:underline ;}
+.kid2{background-color: black;color: orange;}
+
+
+
+.box{box-shadow: 20px 10px 90px black;}
+
+.box1{background-color: #405c6d;color: aliceblue;border-radius: 0px 100px;}
+.img1{width: 90%; height: 50%;border-radius:  300px 30px ;margin-left: 10px}
+
+.box2{background-color:;color: aliceblue;border-radius:100px;color: black;}
+.img2{width: 100%;height: 50%;margin-top: 20px;border-radius: 50px 50px 50px 50px;}
+.con2{text-shadow: 3px 5px 10px #405c6d;}
+
+
+.img3{width: 90%; height: 50%;border-radius:;}
+.img4{width: 100%;height: 50%;margin-top: 20px;border-radius: px;}
+.box3{background-color: orange;}
+.img5{width: 90%; height: 50%;border-radius:;}
+
+.box4{background-color: black;box-shadow: 0px 0px 80px rgb(192, 214, 26);}
+.con4{background-color:rgb(192, 214, 26) ;text-align: center;}
+.box5{background-color: whitesmoke;color: #9c4545;}
+
+
+.im1{border-radius: 40%;}
+
+
+
+.footer{height: 200px;text-align: center;margin-top: 10%;}
+
+
+
+/* 
+style for details */
+
+.rock{width: 60%;border-radius: 50px;box-shadow: 0px 0px 80px black;margin-top: 20%}
+.de1{background-color: rgb(150, 80, 80);margin-top: 20%;font-size: 40px;text-align: center;color: white;height:;width: 60%;border-radius: 60%;}
+.de2{width: 50%;height: ;position: relative;left: 30%;background-color:rgb(150, 80, 80);text-align: center;color: white;border-radius: 80%;}
+
+.bt1{margin-bottom: 10%;border-color: black;border-radius: 40%;margin-left: 65%;}
+
+
+.cd{display: flex;}
+.her{position: relative;top: 35%;left: 15%;vertical-align:;}
+
+
+
+
+
+.probox{width: ;height: ;background-color: peachpuff;}
+
+.her2{position: relative;top: 25%;left: 15%;vertical-align:;font-family:  fantasy;font-size: 100px;}
+.food{width: 100%;height: ;background-color: #999c45;font-size: 60px;}
+.mood{font-size: 80px;color:rgb(112, 216, 119);background-color: violet;}
+
+
+
+.show:hover{transform: scale(0.9);
+z-index: ;border-radius: 80px;box-shadow: 5px 5px 20px black;}
+
+
+
+.pro{background-color: rgb(253, 253, 130);display: flex;}
+.card{height: 500px;margin: 30px;overflow: hidden;box-shadow: 5px 5px 20px black;display: inline-block;position: relative;}
+
+.pic{border-radius: 0px;display: block;}
+.pic:hover{transform: scale(3.20);overflow: hidden;}
+
+.overlay{position: absolute;
+transition: all .3s ease;
+opacity: .0;
+}
+
+.jj{color:white;position:absolute;}
+.card2{background-color: red;}
+
+.con-bg{background-color: #000c3e;}
+.cart:hover{transform: scale(1.1);}
+
+
+/* 
+style for register */
+
+.farm{background-color: #efefdd;border-radius: 0px 0px 0px 0px ;}
+.reg-con{text-align: center;text-shadow: 50px 40px 6px  #eded56;background-color: skyblue;height: 100px;color:whitesmoke;border-radius: 100px;}
+
+.picc{ border-radius: 0px 100px 00px 100px ;  }
+
+
+
+
+
