@@ -27,6 +27,7 @@ const[password,setPassword]= useState('');
       localStorage.setItem('user',email)
      
        nav("/")
+       window.location.reload();
         }
         else{
           alert(message)

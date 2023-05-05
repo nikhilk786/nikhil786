@@ -16,13 +16,13 @@ console.log(menubar);
 
 function App() {
 const nav = useNavigate();
- const [user,setUser] = useState(null);
+ const [user,setUser] = useState(localStorage.getItem('user'));
 
 useEffect(()=>{
 console.log("usereffect");
  function show(){
 
-    setUser(localStorage.getItem('user'))
+    
   }
   show()
 },[])
@@ -30,8 +30,9 @@ console.log("usereffect");
 function logout(){
   alert('logout')
 localStorage.clear()
-  setUser(localStorage.getItem('user'))
+  
   nav('/')
+  window.location.reload();
 }
 
 async function addcart(){
@@ -47,7 +48,7 @@ nav('/cart')
   }
  
 }
-
+console.log(user);
   return (
             <>
            
@@ -59,7 +60,7 @@ nav('/cart')
               <Col>
              
               { 
-            user!==null? <Button /* onClick={logout} */>Logout</Button>:null
+            user!=null? <Button  onClick={logout} >Logout</Button>:null
           }
               </Col></Row>
               <Row>
@@ -85,10 +86,10 @@ nav('/cart')
                )
 
             }
-            
+     {user!=null?null:<>      
    <Nav.Link href="/register" >Register</Nav.Link>
    <Nav.Link href="/login" >Login</Nav.Link>
-   
+   </> }
           
           </Nav>
           {/* <Form className="d-flex">
@@ -119,11 +120,14 @@ nav('/cart')
              <Route path='/' element={<Home/>}/>
              <Route path='/about' element={<About/>}/>
              <Route path='/details' element={<Details/>}/>
-             <Route path='/register' element={<Register/>}/>
-             <Route path='/login' element={<Login/>}/>
+            
              <Route path='/product' element={<ProductInfo/>}/>
              <Route path='/cart' element={<Cart/>}/>
-
+{user!=null?null:<>
+             <Route path='/register' element={<Register/>}/>
+             <Route path='/login' element={<Login/>}/>
+             </>
+}
          {/*    {
               user? null:<>
              <Route path='/register' element={<Register/>}/>
