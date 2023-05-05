@@ -134,7 +134,7 @@ app.post('/addtocart',function(req,res){
   
   
    let result=fs.appendFileSync('./data/userdata.json', JSON.stringify(req.body),"utf8")
-    fs.appendFileSync('./data/userinfo.json', "\n","utf8")
+    fs.appendFileSync('./data/userdata.json', "\n","utf8")
     let resultdata=""
     if(!result){
         resultdata={success:true,message:"data insert successfully"}
