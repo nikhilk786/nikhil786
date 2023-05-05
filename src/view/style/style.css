@@ -115,7 +115,20 @@ style for register */
 
 .picc{ border-radius: 0px 100px 00px 100px ;  }
 
+.addtocartshow{
 
+    width: 100%;
+    height: 200px;
+}
+.addtocartshow-img{
 
+    width: 30%;
+    height: 200px;
+}
+.addtocartshow-text{
+
+    width: 60%;
+    height: 200px;
+}
 
 
