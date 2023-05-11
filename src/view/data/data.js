@@ -17,7 +17,7 @@ export var product=[{id:1,name:'Coffee',image:require('../img/cafe/Coffe.jpg'),m
                     {id:8,name:'Mc puff',image:require('../img/cafe/pif.jpg'),mrp:'45rs'},
                     {id:9,name:'Burger',image:require('../img/cafe/burger.jpg'),mrp:'49rs'},
                     {id:9,name:'pizza',image:require('../img/cafe/pizza.webp'),mrp:'399rs'},
-                    {id:9,name:'patties',image:require('../img/cafe/patties.jpg'),mrp:'25rs'},
+                    {id:9,name:'patties',image:require('../img/cafe/Screenshot 2023-05-07 155003.jpg'),mrp:'25rs'},
                     {id:9,name:'cold coffee',image:require('../img/cafe/co coffee.jpeg'),mrp:'80rs'},]
 
 

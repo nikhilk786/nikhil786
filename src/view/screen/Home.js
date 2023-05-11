@@ -2,22 +2,81 @@ import { Container,Row,Col,Carousel,Card,Button,Figure,ListGroup,Spinner} from "
 import{banner,product,product1, product2,product3,product4,product5,pro} from '../data/data'
 import '../style/style.css'
 import { useNavigate } from "react-router-dom";
-import { FaBeer, } from 'react-icons/fa';
+import { FaBeer,FaRegGrinStars } from 'react-icons/fa';
 import { SlEmotsmile} from "react-icons/sl";
 import { FiAperture } from "react-icons/fi";
 import {GrSwift,GrCloudlinux } from "react-icons/gr";
+import Aos from "aos";
+import 'aos/dist/aos.css'
+import { useEffect, useState } from "react";
+
+import { motion, spring } from 'framer-motion';
+import { type } from "@testing-library/user-event/dist/type";
+
+
+
 
 
 function Home() {
+
+  useEffect(()=> {
+    Aos.init({duration:2000});
+  },[]);
+
+
+
 console.log(product);
 const navigate=useNavigate()
 function productinfo(d){
   navigate('Details',{state:d})
 }
 
+
+const transition={type:"spring",loop:Infinity,duration:3};
+const [selected,setselected]=useState(2);
+
     return (
     
             <Container fluid>
+
+{/* <motion.h1 animate={{x: 10,}}>
+    An animated text
+</motion.h1>
+
+<motion.button
+    animate={{ scale: [1, 1.2, 1, 1.2, 1] }}
+    transition={{ delay: 1 }}
+>
+    Add
+</motion.button>
+
+<motion.div
+    animate={{
+        x: 10,
+        backgroundColor: '#fff',
+        boxShadow: '10px 10px 0 rgba(0, 0, 0, 0.2)',
+    }}
+>
+    <h1>friend</h1>
+    <img src={banner} alt="" />
+</motion.div> */}
+
+{/* <motion.div
+    initial={{ opacity: 0, x: '-50' }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{transition}}
+    key={{selected}}
+    exit={{opacity:0,x:50}}
+>
+    <h1>Hi</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+        perspiciatis voluptates nihil dolores eum architecto eligendi
+    </p>
+</motion.div> */}
+
+
+
     <Row>
 <Col className="col">
 <Carousel>
@@ -50,14 +109,14 @@ banner.map(function(d){
 
     </Row>
              <Row className="mt ">
-              <h1 className="he1 m-3</FaBeer >">What's on your <SlEmotsmile/> mind?</h1>
+              <h1 data-aos="fade-right" className="he1 m-3</FaBeer >">What's on your <SlEmotsmile/> mind?</h1>
                
                
 { 
 product.map(function(d){    
     return( 
         <Col md={4} lg={3} sm={6}  onClick={()=>{productinfo(d)}} className="mt" >
-      <Card className="mt ">
+      <Card data-aos="zoom-in-left" className="mt ">
        <div className="imgcard  ">
       <Card.Img className="show" variant="top" src={d.image}  />
       </div>
@@ -69,10 +128,17 @@ product.map(function(d){
         <ListGroup.Item>{d.mrp}</ListGroup.Item>
         <ListGroup.Item>10% off</ListGroup.Item>
         <div className="d-grid">
-        <Button variant="danger">Add</Button></div>
+        <motion.button
+    animate={{ scale: [1, 1.2, 1, 1.2, 1] }}
+    transition={{ delay: 5 }}
+    
+>
+    Add
+</motion.button></div>
       </Card.Body>
     </Card>
     </Col>
+    
 
 
     )
@@ -137,64 +203,24 @@ new mindset */}
 
 <Row className="probox m-5">
             
-<h1>FOOD MOOD </h1>
+<h1 className="yk" >  # FOOD MOOD  </h1>
              { 
 pro.map(function(d){
     return(
     <> 
-      <Col  className="pro m-5" >
-  
-     
-      <Card className="card2" style={{ width: '' }}>
-      <Card.Img className="pic" variant="top" src={d.image1} />
-      <Card.Body className="con-bg">
-        <div className="jj">
-        <Card.Title  >Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        {/* <Button variant="primary">Go somewhere</Button> */}
-        </div>
-      </Card.Body >
-    </Card>
-    </Col>
-    <Col className="pro m-5">
-    <Card className="cart" style={{ width: '' }}>
-      <Card.Img variant="top" src={d.image1} />
-      <Card.Body >
-        <Card.Title>Farm</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        {/* <Button variant="primary">Go somewhere</Button> */}
-      </Card.Body>
-    </Card>
-    </Col>
-    <Col className="pro m-5">
-    <Card className="cart" style={{ width: '' }}>
-      <Card.Img  variant="top" src={d.image1} />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        {/* <Button variant="primary">Go somewhere</Button> */}
-      </Card.Body>
-    </Card>
-           {/* <h1 className="her2">FOOD</h1>
-           <h1 className="her2">MOOD</h1> */}
-            {/*  */}
-           
-
-            </Col>
-  
-    
+   <Col>
    
-  
- 
+   </Col>
+
+
+   <Col>
+   
+   </Col>
+
+
+   <Col>
+   
+   </Col>
  
     </>
     )
@@ -205,16 +231,8 @@ pro.map(function(d){
     
 }
                
-       
-               
- 
 
              </Row>
-            
-
-
-
-
 {/* 
 end */}
 
@@ -225,7 +243,7 @@ end */}
     return(
     <> 
       <Col md={4} >
-      <img src={d.image2}  className="img3" />
+      <img  data-aos="flip-left"  src={d.image2}  className="img3" />
            <h3>{d.name}</h3>
            <p>{d.info1}</p>
            <p>{d.info2}</p>
@@ -236,12 +254,12 @@ end */}
     <h3>{d.name1}</h3>
            <p>{d.info1}</p>
            <p>{d.info2}</p>
-    <img src={d.image1}  className="img4" />
+    <img data-aos="flip-up" src={d.image1}  className="img4" />
     </Col>
     
    
     <Col md={4}>
-    <img src={d.image2}  className="img3" />
+    <img data-aos="flip-left" src={d.image2}  className="img3" />
    <h3>{d.name}</h3>
    <p>{d.info1}</p>
    <p>{d.info2}</p>
@@ -305,7 +323,7 @@ product3.map(function(d){
 product4.map(function(d){
     return(
     <> 
-              <Col md={2} className="box4">
+              <Col md={2} className="box4" onClick={()=>{productinfo(d)}} >
               
                 
               <Figure>
@@ -349,7 +367,7 @@ product4.map(function(d){
 product5.map(function(d){
 return(
 <> 
-<Col md={3} >
+<Col md={3} onClick={()=>{productinfo(d)}} >
 
 
 <Figure >
@@ -360,7 +378,7 @@ alt="400x100"
 src={d.image}
 />
 <Figure.Caption>
-Buy 2 Get 1 free On Lay's & Bingo Chips.
+Buy 2 Get 1 free On pepsi & fanta drinks.
 </Figure.Caption>
 </Figure>
 

@@ -31,8 +31,8 @@ function logout(){
   alert('logout')
 localStorage.clear()
   
-  nav('/')
-  window.location.reload();
+nav('/')
+window.location.reload();
 }
 
 async function addcart(){
@@ -54,21 +54,19 @@ console.log(user);
            
             <Container fluid>
               <Row><Col> 
-              <Link><img src={require('./view/img/cart.png')}  onClick={addcart} style={{width:50}}/>
-              </Link>
+              {/* <Link><img src={require('./view/img/cart.png')}  onClick={addcart} style={{width:50}}/>
+              </Link> */}
               </Col>
               <Col>
              
-              { 
-            user!=null? <Button  onClick={logout} >Logout</Button>:null
-          }
+       
               </Col></Row>
               <Row>
                   <Col>
 
-                  <Navbar bg="warning" expand="lg">
+                  <Navbar bg="warning" expand="lg" className="gks">
       <Container fluid>
-        <Navbar.Brand href="#nikhil">Setting Cafe Quality </Navbar.Brand>
+        <Navbar.Brand href="#nikhil"className="logo1" >Setting Cafe Quality </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -76,11 +74,12 @@ console.log(user);
             // style={{ maxHeight: '100px' }}
             navbarScroll
           >
+
              <Nav.Link href="/" >Home</Nav.Link>
             {
                menubar.map(function(d){
                 return(
-                 <Nav.Link href={`/${d}`} >{d} </Nav.Link>
+                 <Nav.Link     href={`/${d}`} >{d} </Nav.Link>
                 )
                }
                )
@@ -91,7 +90,13 @@ console.log(user);
    <Nav.Link href="/login" >Login</Nav.Link>
    </> }
           
+
+
+          
           </Nav>
+          { 
+            user!=null? <Button  onClick={logout} >Logout</Button>:null
+          }
           {/* <Form className="d-flex">
             <Form.Control
               type="search"

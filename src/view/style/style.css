@@ -1,5 +1,8 @@
+.gks{background-color: ;color: ;}
+.nav{margin: 25%;font-size: 20px;background-color: whitesmoke;border-radius: 100px;box-shadow: 3px 4px 20px blue;}
 
-.nav{margin: 25%;font-size: 20px;}
+.nav:hover{cursor: pointer;color: #999c45;}
+
 div.col{padding: 0px;}
 
 .mt{margin-top: 50px;background-color:whitesmoke;}
@@ -62,21 +65,25 @@ div.col{padding: 0px;}
 /* 
 style for details */
 
-.rock{width: 60%;border-radius: 50px;box-shadow: 0px 0px 80px black;margin-top: 20%}
-.de1{background-color: rgb(150, 80, 80);margin-top: 20%;font-size: 40px;text-align: center;color: white;height:;width: 60%;border-radius: 60%;}
-.de2{width: 50%;height: ;position: relative;left: 30%;background-color:rgb(150, 80, 80);text-align: center;color: white;border-radius: 80%;}
+.rock{width: 80%;border-radius: 50px;box-shadow: 0px 0px 80px rgb(180, 180, 41);height: 80%;position: relative;top: 10%; }
+.de1{background-color: pink;margin-top: 20%;font-size: 40px;text-align: center;color: white;height:;width: 100%;border-radius: 40px;}
+.de2{width: 50%;height: ;position: relative;left: 25%;background-color:pink;text-align: center;color: white;border-radius: 20px;}
 
-.bt1{margin-bottom: 10%;border-color: black;border-radius: 40%;margin-left: 65%;}
+.bt1{margin-bottom: 10%;border-color: black;border-radius:40px;margin-left: 45%;}
 
 
 .cd{display: flex;}
 .her{position: relative;top: 35%;left: 15%;vertical-align:;}
 
 
+.t1{background: url('../img/mbanner.jpg');height:500px;}
+.row-2{background-color: #e4e4e4; height: 230px;}
 
 
 
-.probox{width: ;height: ;background-color: peachpuff;}
+
+
+.probox{width: ;height: ;background-color:;}
 
 .her2{position: relative;top: 25%;left: 15%;vertical-align:;font-family:  fantasy;font-size: 100px;}
 .food{width: 100%;height: ;background-color: #999c45;font-size: 60px;}
@@ -89,7 +96,7 @@ z-index: ;border-radius: 80px;box-shadow: 5px 5px 20px black;}
 
 
 
-.pro{background-color: rgb(253, 253, 130);display: flex;}
+.pro{background-color:;display: flex;}
 .card{height: 500px;margin: 30px;overflow: hidden;box-shadow: 5px 5px 20px black;display: inline-block;position: relative;}
 
 .pic{border-radius: 0px;display: block;}
@@ -100,11 +107,13 @@ transition: all .3s ease;
 opacity: .0;
 }
 
-.jj{color:white;position:absolute;}
+.jj{color:whitesmoke;position:absolute;}
 .card2{background-color: red;}
 
-.con-bg{background-color: #000c3e;}
+.con-bg{background-color: tan;}
 .cart:hover{transform: scale(1.1);}
+
+.yk{color: tomato;font-family: cursive;text-shadow: 35px 35px 7px tomato;text-align: center;}
 
 
 /* 

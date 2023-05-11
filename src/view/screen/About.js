@@ -8,7 +8,7 @@ function About() {
     return (
       <Container fluid>
         <Row>
-        <h2 className="m1-5 " > description</h2>
+        <h2 className="reg-con m-2 " > description</h2>
         { 
 product9.map(function(d){
 return(

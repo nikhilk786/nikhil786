@@ -30,8 +30,11 @@ else{
 
     return (
         
-            <Container>
-            <Row>
+            <Container fluid >
+            <Row  className='t1'>
+        
+
+                
  
 <>
             <Col className='cd' md={6} >
@@ -60,9 +63,10 @@ else{
          
    
 </Row>
+
 <Row>
 
-
+<h1 className='row-2'>   quality   </h1>
 
 </Row>
 

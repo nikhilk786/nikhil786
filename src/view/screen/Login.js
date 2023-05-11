@@ -41,7 +41,7 @@ const[password,setPassword]= useState('');
 
     return (
  <>
- <h1>Login</h1>
+ <h1 className="reg-con m-3" >Login</h1>
  <Container>
  <Row>
 
