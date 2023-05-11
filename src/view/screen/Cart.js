@@ -1,6 +1,8 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { Container,Row,Col } from "react-bootstrap"
+import { Link } from "react-router-dom"
+
 
 export default function Cart(){
 
@@ -61,8 +63,8 @@ console.log(data);
                    </Col>
                    <Col>
                         <div className="bg-primary">
-                            <h1>Pay</h1>
-
+                           
+                       <Link to ={{ pathname: '/payment'   }}>  <h1>Pay</h1> </Link>
                         </div>
                    </Col>
                    

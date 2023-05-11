@@ -12,6 +12,7 @@ import {menubar} from './view/data/data'
 import Register from "./view/screen/Register";
 import Login from "./view/screen/Login";
 import ProductInfo from "./view/screen/product";
+import Payment from "./view/screen/Payment";
 console.log(menubar);
 
 function App() {
@@ -128,6 +129,9 @@ console.log(user);
             
              <Route path='/product' element={<ProductInfo/>}/>
              <Route path='/cart' element={<Cart/>}/>
+             <Route path='/payment' element={<Payment/>}/>
+
+
 {user!=null?null:<>
              <Route path='/register' element={<Register/>}/>
              <Route path='/login' element={<Login/>}/>
